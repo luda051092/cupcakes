@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+
+
+{% block header %} All cupcakes (% endblock %)
+{% block content %}
+<div class="row justify-content-center">
+    <div class="card-group" id="list">
+
+    </div>
+</div>
+<h4 class="display-4 text-center my-5">New Cupcake</h4>
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <form action="">
+                <div class="form-group mb-2">
+                    <label for="flavor">Flavor</label>
+                    <input type="text" class="form-control" name="flavor" id="flavor">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="size">Size</label>
+                    <input type="text" class="form-control" name="size" id="size">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="size">Rating</label>
+                    <input type="number" min="0" max="10" step="0.1" class="form-control" name="rating" id="rating">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="image">Image</label>
+                    <input type="text" min="0" max="10" step="0.1" class="form-control" name="image" id="image">
+                </div>
+                <button class="btn btn-lg btn-success mt-2 px-5 mb-5">Add</button>    
+            </form>
+        </div>
+    </div>
+    {% endblock %}

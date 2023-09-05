@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="cupcakestyle.css">
+        <title>{% block title %} {% endblock %}</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="display-1 text-center my-5">{% block header %} {% endblock %}</h1>
+            {% block content %}
+            {% endblock %}
+        </div>
+        
+        
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://unpkg.com/axios/dist/axios.js"></script>
+        <script src="/static/cupcakesapp.js"></script>
+    </body>
+</html>
